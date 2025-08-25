@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Лучшие ресурсы для твоего роста</title>
+  <meta name="description" content="Все ключевые ссылки Хуршеда в одном месте." />
+  <style>
+    :root {
+      --bg1: #0f1226;
+      --bg2: #1a1446;
+      --card: rgba(255,255,255,0.08);
+      --text: #ffffff;
+      --muted: rgba(255,255,255,0.7);
+      --btn-bg: #ffffff;
+      --btn-text: #1a1446;
+      --btn-hover: #eaeaf5;
+      --radius: 18px;
+      --shadow: 0 12px 35px rgba(0,0,0,.35);
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: radial-gradient(1200px 600px at 10% 10%, #2c247a 0%, rgba(44,36,122,0) 60%),
+                  radial-gradient(900px 500px at 90% 0%, #5a3bd6 0%, rgba(90,59,214,0) 60%),
+                  linear-gradient(135deg, var(--bg1), var(--bg2));
+      display: grid;
+      place-items: center;
+      padding: 28px 16px 48px;
+    }
+    .wrap {
+      width: 100%;
+      max-width: 880px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 6px 0 4px;
+      letter-spacing: 0.2px;
+    }
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 16px;
+    }
+    @media (min-width: 700px) {
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius);
+      padding: 18px;
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+    }
+    .card h2 {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 2px 0 12px;
+      letter-spacing: 0.3px;
+    }
+    .links { display: grid; gap: 10px; }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      text-decoration: none;
+      background: var(--btn-bg);
+      color: var(--btn-text);
+      padding: 14px 16px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: transform .16s ease, background .16s ease, box-shadow .16s ease;
+      box-shadow: 0 6px 16px rgba(0,0,0,.25);
+      border: 1px solid rgba(0,0,0,.06);
+      text-align: center;
+      word-break: break-word;
+    }
+    .btn:hover { background: var(--btn-hover); transform: translateY(-2px); }
+    .btn:active { transform: translateY(0); }
+
+    footer { text-align: center; margin-top: 22px; color: var(--muted); font-size: 12px; }
+    .single { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Лучшие ресурсы для твоего роста</h1>
+      <p class="subtitle">Все важные ссылки — в одном месте</p>
+    </header>
+
+    <section class="grid">
+      <!-- Найти работу / вакансии -->
+      <article class="card">
+        <h2>Найти работу / вакансии</h2>
+        <div class="links">
+          <a class="btn" href="https://www.upwork.com/" target="_blank" rel="noopener noreferrer">Upwork</a>
+          <a class="btn" href="https://www.fiverr.com/" target="_blank" rel="noopener noreferrer">Fiverr</a>
+          <a class="btn" href="https://t.me/vazifatjk" target="_blank" rel="noopener noreferrer">Vazifatjk</a>
+        </div>
+      </article>
+
+      <!-- Публиковать портфолио -->
+      <article class="card">
+        <h2>Публиковать портфолио</h2>
+        <div class="links">
+          <a class="btn" href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">Behance</a>
+          <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </article>
+
+      <!-- Создать портфолио -->
+      <article class="card">
+        <h2>Создать портфолио</h2>
+        <div class="links">
+          <a class="btn" href="https://www.canva.com/" target="_blank" rel="noopener noreferrer">Canva</a>
+          <a class="btn" href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">Figma</a>
+        </div>
+      </article>
+
+      <!-- Телеграм каналы для дизайнеров -->
+      <article class="card">
+        <h2>Телеграм‑каналы для дизайнеров</h2>
+        <div class="links">
+          <a class="btn" href="https://t.me/tajdesign_chat" target="_blank" rel="noopener noreferrer">Tajdesign</a>
+          <a class="btn" href="https://t.me/+Oxz0_opTi1gyOWMy" target="_blank" rel="noopener noreferrer">Сообщество маркетологов и PRщиков Таджикистана</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Инстаграм автора -->
+    <section class="single">
+      <article class="card">
+        <h2>Инстаграм автора</h2>
+        <div class="links">
+          <a class="btn" href="https://www.instagram.com/khurshed.dsgn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">khurshed.dsgn</a>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Хуршед Бобоев. Сделано с ❤️.
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
